@@ -4,3 +4,6 @@ DO 1 I=1, M
 DO 1 J=1, N
 C(I,J)=0,
 DO i K=1, L
+1  C(I,J)=C(I,J)+A(I,K)*B(K,J)
+RETURN
+END
