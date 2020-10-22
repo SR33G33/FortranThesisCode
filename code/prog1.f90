@@ -2,8 +2,8 @@ SUBROUTINE PROMAT(A,B,C,M,L,N)
 DIMENSION A(M,L).B(L,N),C(M,N)
 DO 1 I=1, M
 DO 1 J=1, N
-C(I,J)=0,
-DO i K=1, L
+C(I,J)=0.
+DO 1 K=1, L
 1  C(I,J)=C(I,J)+A(I,K)*B(K,J)
 RETURN
 END
