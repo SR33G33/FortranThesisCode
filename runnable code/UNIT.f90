@@ -1,0 +1,9 @@
+  SUBROUTINE UNIT(B,N)
+  DIMENSION B(N,N)
+  DO 1 I=1,N
+  DO 1 J=1,N
+1 B(I,J)=0
+  DO 2 I=1,N
+2 B(I,I)=1.
+  RETURN
+  END
