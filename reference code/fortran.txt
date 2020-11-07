@@ -79,7 +79,7 @@
    4 EDM=D(I)
      L=I
    3 CONTINUE
-     IF(EDM-O.1E-04) 5,6,6
+     IF(EDM-O.00001) 5,6,6
    6 DO 7 J=1,N
      A(L,J)=A(L,J)/SQRT(EDM)
      A(J,L)=A(L,J)
