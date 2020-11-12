@@ -79,7 +79,7 @@
    4 EDM=D(I)
      L=I
    3 CONTINUE
-     IF(EDM-O.00001) 5,6,6
+     IF(EDM-0.00001) 5,6,6
    6 DO 7 J=1,N
      A(L,J)=A(L,J)/SQRT(EDM)
      A(J,L)=A(L,J)
@@ -91,8 +91,8 @@
      A(I,J)=A(I,J)-A(L,I)*A(L,J)
      B(I,J)=B(I,J)-B(L,J)*A(L,I)
    8 CONTINUE
-     DO 1O I=1,N
-     IF(I-L) 11,1O,11
+     DO 10 I=1,N
+     IF(I-L) 11,10,11
   11 A(L,I)=0
   10 CONTINUE
      R(L)=-1
@@ -178,7 +178,7 @@
   3 R(I,J)=Q(N+1+J-I,1)
     RETURN
     END
-
+    
     SUBROUTINE PS (L, N, R, LPI)
     INTEGER R, RO, RANG1, RANG2, P, Q, Q1
     REAL L(6,7), LT(7,6), LPI(7,6), A(6,6), B(6,6), IM(6,6), IMT(6,6), C(6,6), U(6,6), UT(6,6), D(6,6), API(6,6), C1(6,6)
