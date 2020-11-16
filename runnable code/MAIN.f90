@@ -337,3 +337,4 @@
     WRITE (108,180) (I, BETA (I),          I, ALFA2 (I), I=1, I2)
 180 FORMAT (20X, ‘BETA (‘I2’)=’ ,F8.2, 10X, ‘ALFA2(‘I2’)=’, F8.2)
 1500 STOP
+     END
