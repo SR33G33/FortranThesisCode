@@ -6,7 +6,7 @@
     EQUIVALENCE (QC(1,1), QO(1,1), RR(1,1), E(1,1), CE(1,1), F(1,1))
     EQUIVALENCE ( PSE(1,1), PSF(1,1),BE(1,1), CE(1,1))
     EQUIVALENCE (Q(1,1), CK1(1,1), OK1(1,1),BE1(1,1))
-    EQUIVALENCE (CK2(1,1), OK2(1,1), AE(1,1), P(1,1), BAKC(1,1)
+    EQUIVALENCE (CK2(1,1), OK2(1,1), AE(1,1), P(1,1), BAKC(1,1))
     EQUIVALENCE (CK(1,1), QK(1,1), A2(1,1), AK(1,1))
     EQUIVALENCE (AKC(1,1), AS(1), D(1))
     READ (105, 98) N,M,IR
