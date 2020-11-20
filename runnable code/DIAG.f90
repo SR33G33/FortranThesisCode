@@ -3,7 +3,7 @@
     DIMENSION A(N,N) ,B(N,N),R(9),D(9)
     CALL UNIT(B,N)
     DO 1 I=1, N
-    R(I)=O,
+    R(I)=0
 1   D(I)=A(I,I)
     DO 12 K=1,N
     EDM=D(1)
