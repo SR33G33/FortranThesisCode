@@ -52,7 +52,7 @@
     E(I,J)=0 
     DO 5 L=1,N 
   5 E(I,J)=E(I,J)+A(I,L)*AK(L,J) 
-    TRAC=O
+    TRAC=0
     DO 6 I=1,N
   6 TRAC=TRAC+E(I,I) 
     ALFA(M1)=-(1./M)*TRAC 
@@ -69,7 +69,7 @@
      DIMENSION A(N,N),B(N,N),R(9),D(9)
      CALL UNIT(B,N)
      DO 1 I=1,N
-     R(I)=O
+     R(I)=0
    1 D(I)=A(I,I) 
      DO 12 K=1,N
      EDM=D(1)
@@ -155,7 +155,7 @@
     DO 2 IQ=1,N2
     DO 2 I=1,N
     DO 2 J=1,IV
-    S=O
+    S=0
     DO 3 K=1,N 
   3 S=S+AA(I,K)*W(K,J+(IQ-1)*IV) 
   2 W(I,J+IQ*IV)=S  
