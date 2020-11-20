@@ -32,7 +32,7 @@
     R(L)=-1.
     DO 12 I=1,N
 12  D(I)=A(I,I)+R(I)
-5   RO=O.
+5   RO=0
     DO 14 I=1,N
 14  RO=RO-R(I)
     I=1
