@@ -87,9 +87,10 @@
      A(L,L)=1 
      DO 8 I=1,N  
      IF(I-L) 9,8,9
-   9 DO 8 J=1,N  
+   9 DO 88 J=1,N  
      A(I,J)=A(I,J)-A(L,I)*A(L,J)  
-     B(I,J)=B(I,J)-B(L,J)*A(L,I) 
+     B(I,J)=B(I,J)-B(L,J)*A(L,I)
+  88 CONTINUE
    8 CONTINUE 
      DO 10 I=1,N 
      IF(I-L)11,10,11 
