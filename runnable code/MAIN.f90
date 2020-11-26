@@ -246,7 +246,7 @@
 112 R(I, J)=S+AL1(N-I+2)*T(J)
     CALL PROMAT (R, CT, OL, N, N, M)
 
-    IL=N*L
+    IL=N+L
     JC=L+(L+1)*M
     DO 121 I=1, IL
     DO 121 J=1, JC
