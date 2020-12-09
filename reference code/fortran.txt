@@ -120,7 +120,7 @@
 
      SUBROUTINE ESALON(A,N,M)
      DIMENSION A(N,M)
-     DATA EPS/1.E-6/
+     EPS=1.E-6
      K=1
      DO 8 J=1,M
      PIV=0

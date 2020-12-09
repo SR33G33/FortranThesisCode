@@ -9,14 +9,14 @@
 1   PIV=ABS(A(I,J))
     LOC=I
 2   CONTINUE
-    IF(FIV-EPS) 8,8,3
+    IF(PIV-EPS) 8,8,3
 3   DO 4 L=1,N
     S=A(K,L)
     A(K,L)=A(LOC,L)
 4   A(LOC,L)=S
     S=A(K,J)
     DO 5 L=K,M
-5   A(K,L)=A(K,L)/5
+5   A(K,L)=A(K,L)/S
     K1=K+1
     DO 6 I=K1,N
     DO 6 L=J ,M
